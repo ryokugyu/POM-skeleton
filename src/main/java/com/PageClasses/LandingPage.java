@@ -17,15 +17,15 @@ public class LandingPage extends PageBaseClass {
 		
 	}
 	
-	public void inputUserName() {
+	public void inputUserName(String username) {
 		conversionPageObject.username.clear();
-		conversionPageObject.username.sendKeys("*********");
+		conversionPageObject.username.sendKeys(username);
 		
 	}
 	
-	public void inputPassword() {
+	public void inputPassword(String password) {
 		conversionPageObject.password.clear();
-		conversionPageObject.password.sendKeys("********");
+		conversionPageObject.password.sendKeys(password);
 	}
 	
 	public HomePage clickLogin() {

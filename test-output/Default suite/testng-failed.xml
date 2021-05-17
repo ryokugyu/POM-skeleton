@@ -5,7 +5,7 @@
     <classes>
       <class name="com.AutomationTest.BaseTests">
         <methods>
-          <include name="FacebookLoginTest"/>
+          <include name="FacebookLoginTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.AutomationTest.BaseTests -->
     </classes>
