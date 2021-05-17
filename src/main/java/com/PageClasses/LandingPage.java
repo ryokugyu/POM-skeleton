@@ -7,31 +7,31 @@ import com.PageBaseClass.PageBaseClass;
 import com.PageObjects.ConversionPageObjects;
 
 public class LandingPage extends PageBaseClass {
-	ConversionPageObjects cpo;
+	ConversionPageObjects conversionPageObject;
 	
 	public LandingPage(WebDriver driver) {
 		this.driver= driver;
 		
-		cpo = new ConversionPageObjects(driver);
-		PageFactory.initElements(driver, cpo);
+		conversionPageObject = new ConversionPageObjects(driver);
+		PageFactory.initElements(driver, conversionPageObject);
 		
 	}
 	
 	public void inputUserName() {
-		cpo.username.clear();
-		cpo.username.sendKeys("*********");
+		conversionPageObject.username.clear();
+		conversionPageObject.username.sendKeys("*********");
 		
 	}
 	
 	public void inputPassword() {
-		cpo.password.clear();
-		cpo.password.sendKeys("********");
+		conversionPageObject.password.clear();
+		conversionPageObject.password.sendKeys("********");
 	}
 	
 	public HomePage clickLogin() {
 		
 		try{
-			cpo.login.click();
+			conversionPageObject.login.click();
 			Thread.sleep(5000);
 		} catch(Exception e) {
 			System.out.println(e.getMessage());

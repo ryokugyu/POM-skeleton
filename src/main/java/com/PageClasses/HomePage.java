@@ -7,18 +7,18 @@ import com.PageBaseClass.PageBaseClass;
 import com.PageObjects.ConversionPageObjects;
 
 public class HomePage extends PageBaseClass {
-	ConversionPageObjects cpo;
+	ConversionPageObjects conversionPageObject;
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		
-		cpo = new ConversionPageObjects(driver);
-		PageFactory.initElements(driver, cpo);
+		conversionPageObject = new ConversionPageObjects(driver);
+		PageFactory.initElements(driver, conversionPageObject);
 	}
 	
 	public ProfilePage selectUserProfile() throws InterruptedException {
 		
-		cpo.selectProfile.click();
+		conversionPageObject.selectProfile.click();
 		Thread.sleep(5000);
 		
 		ProfilePage profilepage = new ProfilePage(driver);

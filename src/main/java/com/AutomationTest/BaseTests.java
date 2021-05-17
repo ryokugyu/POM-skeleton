@@ -27,8 +27,6 @@ public class BaseTests {
 		profilepage = home.selectUserProfile();
 		profilepage.displayProfileStatus();
 		pagebaseclass.closeBrowser();
-		
-		
 	}
 
 }

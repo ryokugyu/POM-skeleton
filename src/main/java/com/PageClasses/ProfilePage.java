@@ -7,19 +7,19 @@ import com.PageBaseClass.PageBaseClass;
 import com.PageObjects.ConversionPageObjects;
 
 public class ProfilePage extends PageBaseClass {
-	ConversionPageObjects cpo;
+	ConversionPageObjects conversionPageObject;
 
 
 	public ProfilePage(WebDriver driver) {
 		this.driver = driver;
 		
-		cpo = new ConversionPageObjects(driver);
-		PageFactory.initElements(driver, cpo);
+		conversionPageObject = new ConversionPageObjects(driver);
+		PageFactory.initElements(driver, conversionPageObject);
 
 	}
 	
 	public void displayProfileStatus() {
-		System.out.println(cpo.profileStatus.getText());
+		System.out.println("Inside the page..");
 	}
 
 
